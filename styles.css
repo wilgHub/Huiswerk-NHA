@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(Amsterdam.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header-title {
+    font-family: 'UwExterneLettertype', sans-serif;
+    font-size: 36px;
+    color: black;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    flex: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-section h2 {
+    font-size: 24px;
+}
+
+.right-section {
+    flex: 9;
+    background-color: orange;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.attraction {
+    margin-bottom: 20px;
+}
+
+.attraction img {
+    float: right;
+    max-width: 100px;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        flex: auto;
+        width: 100%;
+    }
+
+    .right-section {
+        background-color: white;
+    }
+
+    .attraction img {
+        float: none;
+        max-width: 100%;
+        margin-left: 0;
+    }
+}

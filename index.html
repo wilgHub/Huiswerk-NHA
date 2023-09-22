@@ -3,58 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gelderland</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Uw aangepaste stylesheet -->
-    <style>
-        /* Voeg aangepaste CSS-stijlen toe voor de kolommen */
-        .left-section {
-            float: left;
-            width: 50%;
-        }
-        .right-section {
-            float: left;
-            width: 50%;
-        }
-    </style>
+    <title>Amsterdam</title>
+    <!-- Voeg de Bootstrap CSS toe -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1 class="header-title">Amsterdam</h1>
+    <!-- Headergedeelte -->
+    <header class="header">
+        <h1>Amsterdam</h1>
     </header>
 
-    <main>
-        <section class="left-section">
-            <h2>Feitjes over Uw Woonplaats</h2>
-            <ul>
-                <li>Feitje 1: Lorem ipsum dolor sit amet.</li>
-                <li>Feitje 2: Consectetur adipiscing elit.</li>
-                <li>Feitje 3: Sed do eiusmod tempor incididunt.</li>
-                <li>Feitje 4: Ut labore et dolore magna aliqua.</li>
-                <li>Feitje 5: Exercitation ullamco laboris nisi.</li>
-            </ul>
-        </section>
-
-        <section class="right-section">
-            <div class="attraction">
-                <img src="atractie2.jpg" alt="Atractie 2">
-                <article>
-                    <h2>Attractie 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum luctus massa.</p>
-                </article>
+    <!-- Centraal gedeelte -->
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Linker kolom met feitjes -->
+                <h2>Feitjes over Uw Woonplaats</h2>
+                <ul>
+                    <li>Feitje 1: Lorem ipsum dolor sit amet.</li>
+                    <li>Feitje 2: Consectetur adipiscing elit.</li>
+                    <li>Feitje 3: Sed do eiusmod tempor incididunt.</li>
+                    <li>Feitje 4: Ut labore et dolore magna aliqua.</li>
+                    <li>Feitje 5: Exercitation ullamco laboris nisi.</li>
+                </ul>
             </div>
+            <div class="col-md-6 bg-secondary">
+                <!-- Rechter kolom met achtergrondkleur -->
+                <!-- Eerste <div> met inhoud -->
+                <div class="content-div">
+                    <h3>Attractie 1</h3>
+                    <div class="content-container">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum luctus massa.
+                            Dit is wat meer tekst over de attractie. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <img src="attractie1.jpg" alt="attractie1">
+                    </div>
+                </div>
 
-            <div class="attraction">
-                <img src="attractie1.jpg" alt="Attractie 1">
-                <article>
-                    <h2>Attractie 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum luctus massa.</p>
-                </article>
+                <!-- Tweede <div> met inhoud -->
+                <div class="content-div">
+                    <h3>Attractie 2</h3>
+                    <div class="content-container">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum luctus massa.
+                            Dit is wat meer tekst over de attractie. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <img src="atractie2.jpg" alt="Attractie 2">
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Uw Woonplaats</p>
-    </footer>
+    <!-- Voeg de Bootstrap JavaScript toe (optioneel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,73 +1,46 @@
-/* Algemene stijlen */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-image: url("Amsterdam.jpg"); /* Vervang door uw achtergrondafbeelding */
-    background-size: cover;
-    color: white;
+.header {
+    background-image: url('Amsterdam.jpg'); 
+    background-position: center;
+    color: black;
     text-align: center;
     padding: 100px 0;
-}
-
-h1.header-title {
-    font-family: "Helvetica Neue", sans-serif; /* Gebruik een extern lettertype */
+    background-size: cover;
     font-size: 36px;
 }
 
-main {
+.content-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-container img {
+    max-width: 50%; 
+}
+
+.bg-secondary {
+    background-color: #ccc; 
     padding: 20px;
+    color: #fff; 
 }
 
-/* Kolomstijlen */
-.left-section {
-    float: left;
-    width: 50%;
-    padding: 20px;
+@media (max-width: 768px) {
 }
 
-.right-section {
-    float: left;
-    width: 50%;
-    padding: 20px;
-}
+.header {
+    font-size: 36px; 
 
-/* Stijlen voor de feitjeslijst */
-h2 {
-    font-size: 24px;
-}
+@media (max-width: 768px) {
+    .header {
+        font-size: 24px; 
+    }
 
-ul {
-    list-style-type: disc;
 }
-
-li {
-    font-size: 18px;
-    margin-bottom: 10px;
 }
-
-/* Stijlen voor de attractie-artikelen */
-.attraction {
-    margin-bottom: 30px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-h2 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-p {
-    font-size: 18px;
-}
-
-/* Footer-stijlen */
-footer {
-   

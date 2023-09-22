@@ -1,3 +1,4 @@
+/* Algemene stijlen */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,68 +6,68 @@ body {
 }
 
 header {
-    background-image: url(Amsterdam.jpg);
+    background-image: url("Amsterdam.jpg"); /* Vervang door uw achtergrondafbeelding */
     background-size: cover;
+    color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
-.header-title {
-    font-family: 'UwExterneLettertype', sans-serif;
+h1.header-title {
+    font-family: "Helvetica Neue", sans-serif; /* Gebruik een extern lettertype */
     font-size: 36px;
-    color: black;
 }
 
-.main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.left-section {
-    flex: 2;
+main {
     padding: 20px;
-    box-sizing: border-box;
 }
 
-.left-section h2 {
-    font-size: 24px;
+/* Kolomstijlen */
+.left-section {
+    float: left;
+    width: 50%;
+    padding: 20px;
 }
 
 .right-section {
-    flex: 9;
-    background-color: orange;
+    float: left;
+    width: 50%;
     padding: 20px;
-    box-sizing: border-box;
 }
 
+/* Stijlen voor de feitjeslijst */
+h2 {
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Stijlen voor de attractie-artikelen */
 .attraction {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.attraction img {
-    float: right;
-    max-width: 100px;
-    margin-left: 20px;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-@media (max-width: 768px) {
-    .main {
-        flex-direction: column;
-    }
-
-    .left-section,
-    .right-section {
-        flex: auto;
-        width: 100%;
-    }
-
-    .right-section {
-        background-color: white;
-    }
-
-    .attraction img {
-        float: none;
-        max-width: 100%;
-        margin-left: 0;
-    }
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
 }
+
+p {
+    font-size: 18px;
+}
+
+/* Footer-stijlen */
+footer {
+   
